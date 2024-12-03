@@ -1,0 +1,200 @@
+/* General Layout */
+.main {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.content-layout {
+    flex: 1;
+    padding: 24px;
+    margin-left: 12%;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.back-button-container {
+    margin-left: auto;
+}
+
+/* Card Styling */
+.ant-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.compose-card, .policy-card, .history-card, .steps-card {
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+/* Form Styling */
+.ant-form-item {
+    margin-bottom: 16px;
+}
+
+.leave-summary {
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Table Styling */
+.ant-table-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ant-table {
+    border-radius: 8px;
+}
+
+.ant-steps-vertical {
+    padding: 16px 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .ant-btn {
+        width: 100%;
+    }
+
+    .compose-card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 18px;
+    }
+
+    .ant-form-item-label > label {
+        font-size: 14px;
+    }
+
+    .compose-card, .policy-card, .history-card, .steps-card {
+        padding: 16px;
+    }
+}
+
+/* Overall layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Form container */
+.form-container {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Form title */
+h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form input fields */
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Focused state for inputs */
+.form-container input:focus,
+.form-container select:focus,
+.form-container button:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Form labels */
+.form-container label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  width: 48%;
+}
+
+/* Modal for the View Employees button */
+.view-employees-modal {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+/* Error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 15px;
+}

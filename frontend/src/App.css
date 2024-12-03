@@ -1,0 +1,27 @@
+/* .form-container{
+    width:1000px;
+
+}
+.title,slogan{
+    text-align: center;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    background-color:rgb(255, 255, 255)
+
+}
+.btn{
+    width: 100%;
+} */
+ .dashboard-content{
+    margin-left: 10px !important;
+ }
+.Role-form-container{
+    margin-right: 220px !important;
+    float:right;
+    width: 100%;
+    
+}

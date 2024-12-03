@@ -1,0 +1,91 @@
+.main {
+  background-color: #f5f5f5;
+}
+
+/* General container for the calendar and event list */
+.calendar-event-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+}
+
+.divider {
+  background-color: #ffffff;
+}
+
+/* Calendar container */
+.calendar-container {
+  width: 100%;
+  height: auto;
+}
+
+.back-button-container {
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+}
+
+/* Event list container */
+.event-list-container {
+  width: 35%;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  overflow-y: auto;
+  height: auto;
+}
+
+/* Header section styling */
+.header {
+  background: #ffffff;
+  padding: 0 24px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Event list styling */
+.event-list-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.event-title {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Button and modal adjustments for mobile screens */
+.modal-button {
+  margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+  .calendar-event-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .calendar-container,
+  .event-list-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .event-title {
+    font-size: 10px;
+  }
+
+  .modal-button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .header-title {
+    font-size: 20px;
+  }
+}
